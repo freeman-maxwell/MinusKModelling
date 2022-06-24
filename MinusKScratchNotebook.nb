@@ -1,0 +1,162 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5485,        154]
+NotebookOptionsPosition[      4370,        127]
+NotebookOutlinePosition[      4789,        143]
+CellTagsIndexPosition[      4746,        140]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Minus-K Scratch Notebook", "Title",
+ CellChangeTimes->{{3.8650851626879387`*^9, 
+  3.8650851749852*^9}},ExpressionUUID->"87e77410-48d3-45f4-ac53-a641e0a738d0"],
+
+Cell["Max Freeman", "Subtitle",
+ CellChangeTimes->{{3.8650851894003277`*^9, 
+  3.8650851914548297`*^9}},ExpressionUUID->"15cb9ee8-3060-4903-b181-\
+bb81617244c6"],
+
+Cell[CellGroupData[{
+
+Cell["Terminology", "Section",
+ CellChangeTimes->{{3.865085317315486*^9, 
+  3.8650853233799477`*^9}},ExpressionUUID->"a34b1fd6-4995-460e-be9b-\
+6bd5e0730fb0"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Stress: ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"Force", "/", "Area"}], " ", "=", " ", 
+    RowBox[{"F", "/", "A"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3b2181b7-43fd-4c1b-a5f5-cd0df80afcab"]
+}], "Item",
+ CellChangeTimes->{{3.865085269276158*^9, 3.865085304872705*^9}, {
+  3.8650853378325443`*^9, 3.865085374994398*^9}, {3.865085543265438*^9, 
+  3.8650855597393103`*^9}, {3.8650856006387463`*^9, 
+  3.8650856046728077`*^9}},ExpressionUUID->"02db4eb9-6c03-4e0c-8c5c-\
+672f24fe73d6"],
+
+Cell[TextData[{
+ StyleBox["Strain:",
+  FontWeight->"Bold"],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"Change", " ", "in", " ", 
+     RowBox[{"Length", " ", "/", " ", "Length"}]}], " ", "=", " ", 
+    RowBox[{"\[Delta]L", "/", 
+     SubscriptBox["L", "0"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d10a065c-ba08-4a2b-b2da-821bf9c92598"]
+}], "Item",
+ CellChangeTimes->{{3.865085269276158*^9, 3.865085288825984*^9}, {
+  3.8650853286648393`*^9, 3.8650853600751762`*^9}, {3.8650855533841453`*^9, 
+  3.8650855550062895`*^9}, {3.8650856082603965`*^9, 
+  3.8650856671985416`*^9}},ExpressionUUID->"687c67f7-bbd7-4fa6-9d96-\
+2bd66ad77df1"],
+
+Cell[TextData[{
+ StyleBox["Stiffness / Modulus: ",
+  FontWeight->"Bold"],
+ "how much energy must be put into the sample to distort it. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"E", " ", "=", " ", 
+    FractionBox["stress", "strain"], " "}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "0a3b7445-7565-412a-89c3-29ea17a1a8c9"]
+}], "Item",
+ CellChangeTimes->{{3.865085269276158*^9, 3.865085288825984*^9}, {
+  3.8650853286648393`*^9, 3.8650853661257806`*^9}, {3.8650859290424724`*^9, 
+  3.865085962318706*^9}, {3.865086001775008*^9, 3.8650860455093384`*^9}, {
+  3.865086079794625*^9, 3.865086080436267*^9}, {3.8650863127439327`*^9, 
+  3.8650863128439393`*^9}},ExpressionUUID->"680744dc-768c-497e-b212-\
+dff7f142920a"],
+
+Cell[TextData[{
+ StyleBox["Damping Capacity:",
+  FontWeight->"Bold"],
+ " a material\[CloseCurlyQuote]s ability to dissipate elastic strain energy \
+(converting to mechanical energy to heat) during mechanical vibration ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{" ", 
+    RowBox[{"\[Implies]", " ", 
+     RowBox[{"Energy", " ", "/", " ", "Volume"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "1c39feaa-acc8-4f86-a085-9868569f4220"],
+ ". "
+}], "Item",
+ CellChangeTimes->{{3.865085269276158*^9, 3.865085288825984*^9}, {
+  3.8650853286648393`*^9, 3.8650853627488728`*^9}, {3.8650861495526686`*^9, 
+  3.865086162002367*^9}, {3.8650863081942196`*^9, 3.865086308888858*^9}, {
+  3.8650866934868207`*^9, 3.8650867374067497`*^9}, {3.8650867717240596`*^9, 
+  3.865086784050696*^9}},ExpressionUUID->"cfdc04db-a1a0-4a58-a936-\
+5f7cac02fc3e"],
+
+Cell["", "Item",
+ CellChangeTimes->{{3.865085269276158*^9, 3.865085288825984*^9}, {
+  3.8650853286648393`*^9, 3.8650853627488728`*^9}, {3.8650861495526686`*^9, 
+  3.865086162002367*^9}, {3.8650863081942196`*^9, 3.865086308888858*^9}, {
+  3.8650866934868207`*^9, 
+  3.8650867034631586`*^9}},ExpressionUUID->"8f2ecaa0-ae33-4121-a31c-\
+95f135f97028"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{574.8, 573.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5e010a4f-65ed-4afe-88ad-d6fa810d118f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 165, 2, 97, "Title",ExpressionUUID->"87e77410-48d3-45f4-ac53-a641e0a738d0"],
+Cell[748, 26, 161, 3, 53, "Subtitle",ExpressionUUID->"15cb9ee8-3060-4903-b181-bb81617244c6"],
+Cell[CellGroupData[{
+Cell[934, 33, 158, 3, 67, "Section",ExpressionUUID->"a34b1fd6-4995-460e-be9b-6bd5e0730fb0"],
+Cell[CellGroupData[{
+Cell[1117, 40, 581, 15, 32, "Item",ExpressionUUID->"02db4eb9-6c03-4e0c-8c5c-672f24fe73d6"],
+Cell[1701, 57, 678, 18, 32, "Item",ExpressionUUID->"687c67f7-bbd7-4fa6-9d96-2bd66ad77df1"],
+Cell[2382, 77, 738, 16, 56, "Item",ExpressionUUID->"680744dc-768c-497e-b212-dff7f142920a"],
+Cell[3123, 95, 857, 19, 74, "Item",ExpressionUUID->"cfdc04db-a1a0-4a58-a936-5f7cac02fc3e"],
+Cell[3983, 116, 347, 6, 32, "Item",ExpressionUUID->"8f2ecaa0-ae33-4121-a31c-95f135f97028"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
